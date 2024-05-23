@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/sheduleChalengeFragment">
+
+
+    <fragment
+        android:id="@+id/sheduleChalengeFragment"
+        android:name="com.ashin.flagfinder.view.fragment.SheduleChalengeFragment"
+        android:label="SheduleChalengeFragment" >
+        <action
+            android:id="@+id/action_sheduleChalengeFragment_to_flagsChallemgeFragment"
+            app:destination="@id/flagsChallemgeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalFragment"
+        android:name="com.ashin.flagfinder.view.fragment.FinalFragment"
+        android:label="FinalFragment" />
+    <fragment
+        android:id="@+id/flagsChallemgeFragment"
+        android:name="com.ashin.flagfinder.view.fragment.FlagsChallemgeFragment"
+        android:label="FlagsChallemgeFragment" >
+        <action
+            android:id="@+id/action_flagsChallemgeFragment_to_finalFragment"
+            app:destination="@id/finalFragment" />
+    </fragment>
+</navigation>
